@@ -1,0 +1,31 @@
+#! /bin/sh
+
+bspc config border_width        2
+bspc config window_gap         12
+
+bspc config split_ratio         0.52
+bspc config borderless_monocle  true
+bspc config gapless_monocle     true
+bspc config focus_by_distance   true
+
+bspc monitor -d I II III IV V VI VII VIII IX X
+
+bspc rule -a Gimp desktop=^8 follow=on floating=on
+bspc rule -a Chromium desktop=^2
+bspc rule -a mplayer2 floating=on
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+
+#set some config up
+nitrogen --restore #restore wallpaper
+xset -b #disable annoying beep
+setxkbmap -layout us -variant dvp
+~/bin/clickpad.sh
+~/bin/naturalScroll.sh
+
+#autostart
+unclutter &
+~/bin/martybar.sh &
+~/.config/bspwm/adjust_gaps.sh &
+compton -cCGf --vsync opengl --shadow-exclude '!focused' &
+
