@@ -16,19 +16,17 @@ bspc rule -a mplayer2 floating=on
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
-#set some config up
+#various configuration tasks
+~/bin/xrandr-set.sh #set up multi monitors
 xsetroot -cursor_name left_ptr
+xset -b #disable keyboard beeps
+setxkbmap -layout us -variant dvp # set up programmer dvorak
+~/bin/clickpad.sh # thinkpad e540 clickpad settings
+~/bin/naturalScroll.sh # touchpad natural 2 finger scrolling (horizontal and vertical)
+wmname LG3D #fix for some java programs such as intellij and clion
 nitrogen --restore #restore wallpaper
-xset -b #disable annoying beep
-setxkbmap -layout us -variant dvp
-~/bin/clickpad.sh
-~/bin/naturalScroll.sh
-# set -U LANG=en_US.UTF-8
-~/bin/xrandr-set.sh
 
 #autostart
-unclutter &
 ~/bin/martybar.sh &
 ~/.config/bspwm/adjust_gaps.sh &
 compton -cCGf --vsync opengl --shadow-exclude '!focused' &
-
