@@ -17,6 +17,7 @@ bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
 #set some config up
+xsetroot -cursor_name left_ptr
 nitrogen --restore #restore wallpaper
 xset -b #disable annoying beep
 setxkbmap -layout us -variant dvp
