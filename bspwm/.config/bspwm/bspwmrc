@@ -24,6 +24,7 @@ setxkbmap -layout us -variant dvp # set up programmer dvorak
 ~/bin/clickpad.sh # thinkpad e540 clickpad settings
 ~/bin/naturalScroll.sh # touchpad natural 2 finger scrolling (horizontal and vertical)
 wmname LG3D #fix for some java programs such as intellij and clion
+setxkbmap -option "caps:backspace"
 nitrogen --restore #restore wallpaper
 
 #autostart
