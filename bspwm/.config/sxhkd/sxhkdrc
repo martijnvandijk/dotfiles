@@ -94,6 +94,7 @@ super + space
 super + shift + space
    rofi -show window
 
+#Multimedia
 XF86AudioRaiseVolume
 	ponymix increase 5
 
@@ -102,6 +103,13 @@ XF86AudioLowerVolume
 
 XF86AudioMute
 	ponymix toggle
+
+XF86AudioPlay
+	mpc toggle
+	touch /tmp/mpc/audioplay
+
+XF86Audio{Prev,Next}
+	mpc {prev,next}
 
 XF86MonBrightnessUp
 	light -A 10
