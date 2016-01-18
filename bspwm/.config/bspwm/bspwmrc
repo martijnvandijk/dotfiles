@@ -30,3 +30,5 @@ nitrogen --restore #restore wallpaper
 ~/bin/martybar.sh &
 ~/.config/bspwm/adjust_gaps.sh &
 compton -cCGf --vsync opengl --shadow-exclude '!focused' &
+syncthing -no-browser & 
+mopidy
