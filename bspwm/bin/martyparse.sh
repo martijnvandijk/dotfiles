@@ -9,8 +9,14 @@ taskicon() {
     *"streaming_client"*)
       echo -e "%{T5}\uf35e%{T1}"
       ;;
+    *"clion"*)
+      echo -e "%{T4}\uf138%{T1}"
+      ;;
     *"Atom"*)
-      echo -e "%{T5}\uf246%{T1}"
+      echo -e "%{T4}\uf13a%{T1}"
+      ;;
+    *"Subl3"*)
+      echo -e "%{T4}\uf13a%{T1}"
       ;;
     *"Steam"*)
       echo -e "%{T4}\uf35e%{T1}"
@@ -20,6 +26,12 @@ taskicon() {
       ;;
     *"Firefox"*)
       echo -e "%{T5}\uf61c%{T1}"
+      ;;
+    *"Telegram"*)
+      echo -e "%{T4}\uf266%{T1}"
+      ;;
+    *"Thunderbird"*)
+      echo -e "%{T4}\uf15a%{T1}"
       ;;
     *"Sakura"*)
       echo -e "%{T5}\uf25e%{T1}"
