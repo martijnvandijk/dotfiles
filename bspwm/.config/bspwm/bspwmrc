@@ -1,4 +1,4 @@
-#! /bin/sh
+! /bin/sh
 
 bspc config border_width        2
 bspc config window_gap         12
@@ -25,6 +25,7 @@ setxkbmap -layout us -variant dvp # set up programmer dvorak
 ~/bin/naturalScroll.sh # touchpad natural 2 finger scrolling (horizontal and vertical)
 wmname LG3D #fix for some java programs such as intellij and clion
 setxkbmap -option "caps:backspace"
+xflux -l 52 -g 5
 nitrogen --restore #restore wallpaper
 
 #autostart
