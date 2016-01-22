@@ -42,7 +42,7 @@ bspc control --subscribe > "$panel_fifo" &
 # Clock
 while true; do
   datetime=$(date '+%a, %d. %B - %H:%M')
-  echo "C%{T2}$datetime"
+  echo "R%{T2}$datetime"
   sleep 1
 done > "$panel_fifo" &
 
