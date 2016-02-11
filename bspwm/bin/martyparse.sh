@@ -51,19 +51,24 @@ while read -r line ; do
     W* )
       # bspwm internal state
       wm_var=""
-      monitor_1="%{Sf}"
-      monitor_2="%{Sl}"
+      monitor_primary="%{S1}"
+      monitor_left="%{S0}"
+      monitor_right="%{S2}"
+      
       IFS=':'
       set -- ${line#?}
       while [ $# -gt 0 ] ; do
         item=$1
         name=${item#?}
         case $item in
-          *WMeDP1)
-            wm_var=monitor_1
+          *DVI-I-1)
+            wm_var=$monitor_primary
             ;;
-          *VGA1)
-            wm_var=monitor_2
+          *HDMI_0)
+            wm_var=$monitor_left
+            ;;
+          *HDMI_1)
+            wm_var=$monitor_right
             ;;
           O*)
             # focused occupied desktop
@@ -129,6 +134,6 @@ while read -r line ; do
       ;;
   esac
 
-  echo -e "$monitor_2$monitor_1 $wm_var   $title%{c}$clock%{r}$updates$volume$network  $load$redshift_status  "
+  echo -e "%{S1} $wm_var   $title%{c}$clock%{r}$updates$volume$network  $load$redshift_status  "
 
 done
