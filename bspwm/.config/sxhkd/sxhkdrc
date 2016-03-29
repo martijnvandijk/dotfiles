@@ -80,12 +80,15 @@ super + !button{1-3}
 super + @button{1-3}
 	bspc pointer -u
 
+super + {Left,Right,Up}
+	bspc window -R DIR {90,180,270} 
+
 #
 # wm independent hotkeys
 #
 
 super + Return
-	sakura
+	urxvt
 
 super + space
   rofi -show run
@@ -93,6 +96,9 @@ super + space
 
 super + shift + space
    rofi -show window
+
+super + alt + space
+	j4-dmenu-desktop --dmenu="rofi -dmenu -i"
 
 #Multimedia
 XF86AudioRaiseVolume
@@ -121,12 +127,15 @@ super + F1
 	~/.config/bspwm/fancylock/lock
 
 super + F2
-	setxkbmap -layout us -variant dvp
+	setxkbmap -layout us -variant dvp -option caps:backspace
 
 super + F3
-	setxkbmap -layout us
+	setxkbmap -layout us -option caps:backspace
 
 #screenshots
+Print
+	teiler
+
 Print + shift + ctrl
 	teiler --quickcopy area
 

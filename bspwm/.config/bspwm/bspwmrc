@@ -10,14 +10,15 @@ bspc config focus_by_distance   true
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
-bspc rule -a Gimp desktop=^8 follow=on floating=on
-bspc rule -a Chromium desktop=^2
+#bspc rule -a Gimp desktop=^8 follow=on floating=on
+#bspc rule -a Chromium desktop=^2
 bspc rule -a mplayer2 floating=on
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
 #various configuration tasks
 ~/bin/xrandr-set.sh #set up multi monitors
+xrdb ~/.Xresources
 xsetroot -cursor_name left_ptr
 xset -b #disable keyboard beeps
 setxkbmap -layout us -variant dvp # set up programmer dvorak
@@ -26,11 +27,17 @@ setxkbmap -layout us -variant dvp # set up programmer dvorak
 wmname LG3D #fix for some java programs such as intellij and clion
 setxkbmap -option "caps:backspace"
 xflux -l 52 -g 5
+xrdb ~/.Xresources
 nitrogen --restore #restore wallpaper
+gpg-connect-agent /bye # auto start gpg agent
 
 #autostart
 ~/bin/martybar.sh &
 ~/.config/bspwm/adjust_gaps.sh &
 compton -cCGf --vsync opengl --shadow-exclude '!focused' &
 syncthing -no-browser & 
-mopidy
+mopidy &
+sleep 0.1 #else stalonetray gets stuck under lemonbar for some reason 
+stalonetray & 
+cbatticon &
+nm-applet
