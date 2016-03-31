@@ -27,6 +27,9 @@ taskicon() {
     *"Firefox"*)
       echo -e "%{T5}\uf61c%{T1}"
       ;;
+    *"chromium"*)
+      echo -e "%{T5}\uf61c%{T1}"
+      ;;
     *"Telegram"*)
       echo -e "%{T4}\uf266%{T1}"
       ;;
@@ -54,7 +57,7 @@ while read -r line ; do
       monitor_primary="%{S1}"
       monitor_left="%{S0}"
       monitor_right="%{S2}"
-      
+
       IFS=':'
       set -- ${line#?}
       while [ $# -gt 0 ] ; do
