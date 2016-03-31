@@ -30,7 +30,7 @@ dockapp_mode simple
                              # can be from 0 (disabled) to 3; this setting works
                              # with tinting and/or transparent and/or pixmap
                              # backgrounds
-fuzzy_edges 0
+fuzzy_edges 0 #0
 
 # geometry <geometry>        # tray's geometry in standard X notation; width and
                              # height are specified in slot_size multiples
@@ -77,6 +77,7 @@ no_shrink false
 
 # parent_bg [<bool>]         # whether to use pseudo-transparency
                              # (looks better when reparented into smth like FvwmButtons)
+#parent_bg true
 parent_bg true
 
 # pixmap_bg <path_to_xpm>    # use pixmap from specified xpm file for (tiled) background
@@ -104,11 +105,12 @@ skip_taskbar true
 sticky true
 
 # tint_color <color>         # set tinting color
-tint_color white
+#tint_color white
+tint_color black
 
 # tint_level <level>         # set tinting level; level ranges from 0 (disabled)
                              # to 255
-tint_level 0
+tint_level 100
 
 # transparent [<bool>]       # whether to use root-transparency (background
                              # image must be set with Esetroot or compatible utility)
