@@ -37,7 +37,7 @@ xprop -spy -root _NET_ACTIVE_WINDOW | sed -un 's/.*\(0x.*\)/A\1/p' > "${panel_fi
 bspc config top_padding "$panel_height"
 
 # get bspwms status feed
-bspc control --subscribe > "$panel_fifo" &
+bspc subscribe > "$panel_fifo" &
 
 # Clock
 while true; do
