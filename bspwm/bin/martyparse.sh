@@ -36,7 +36,7 @@ taskicon() {
     *"Thunderbird"*)
       echo -e "%{T4}\uf15a%{T1}"
       ;;
-    *"Sakura"*)
+    *"urxvt"*)
       echo -e "%{T5}\uf25e%{T1}"
       ;;
     *)
