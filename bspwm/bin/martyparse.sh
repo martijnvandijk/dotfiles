@@ -27,7 +27,7 @@ taskicon() {
     *"Firefox"*)
       echo -e "%{T5}\uf61c%{T1}"
       ;;
-    *"chromium"*)
+    *"google-chrome"*)
       echo -e "%{T5}\uf61c%{T1}"
       ;;
     *"Telegram"*)
