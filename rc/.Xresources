@@ -49,6 +49,9 @@ URxvt.url-launcher:        /usr/bin/chromium
 URxvt.keysym.M-Delete:     perl:matcher:list
 URxvt.colorUL:             #7780a1
 
+URxvt.secondaryScreen: 1
+URxvt.secondaryScroll: 0
+
 ### Rofi
 rofi.color-enabled: true
 rofi.color-window: #273238, #273238, #1e2529
