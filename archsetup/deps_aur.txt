@@ -1,0 +1,5 @@
+polybar
+pulseaudio-ctl
+slack-desktop
+spotify
+telegram-desktop-bin

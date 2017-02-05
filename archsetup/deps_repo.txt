@@ -1,0 +1,15 @@
+fish
+htop
+mpv
+mtr
+pass
+pavucontrol
+rofi
+rxvt-unicode
+sshfs
+stow
+thefuck
+tmux
+vim
+xsel
+chromium
