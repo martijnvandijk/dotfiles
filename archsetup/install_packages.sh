@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
 
-pacaur -Syu `cat repo_deps.txt` `cat aur_deps.txt`
+pacaur -Syu `cat deps_repo.txt` `cat deps_aur.txt`
