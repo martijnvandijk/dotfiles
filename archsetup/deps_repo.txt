@@ -1,3 +1,4 @@
+chromium
 fish
 htop
 mpv
@@ -12,4 +13,3 @@ thefuck
 tmux
 vim
 xsel
-chromium

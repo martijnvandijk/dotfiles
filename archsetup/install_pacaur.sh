@@ -15,4 +15,4 @@ pushd "$build"
 popd
 
 rm -rf "$build"
-#taken from https://github.com/Chaosteil/dotfiles/blob/master/archsetup/install_pacaur.sh
+#taken from https://github.com/Chaosteil/dotfiles/blob/master/archsetup/install_pacaur.sh under MIT license
