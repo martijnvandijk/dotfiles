@@ -4,3 +4,4 @@ pulseaudio-ctl
 slack-desktop
 spotify
 telegram-desktop-bin
+ttf-fontawesome

@@ -3,8 +3,10 @@ fish
 htop
 mpv
 mtr
+nitrogen
 pass
 pavucontrol
+rofi
 rofi
 rxvt-unicode
 sshfs
@@ -12,4 +14,6 @@ stow
 thefuck
 tmux
 vim
+xorg-server
+xorg-xinit
 xsel
