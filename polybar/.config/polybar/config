@@ -6,7 +6,7 @@
 
 [colors]
 foreground = ${colors.white}
-background = ${colors.bgblue}
+background = ${colors.black}
 bgblue = #010024
 white = #f8f8f8
 pink = #F92672
@@ -31,7 +31,7 @@ margin-bottom = 5
 monitor = ${env:MONITOR:DP2-1}
 monitor-fallback = ${env:MONITOR:eDP1}
 dpi = ${xrdb:Xft.dpi:136}
-bottom = true
+bottom = false
 width = 100%
 height = 30
 offset-x = 0
@@ -47,7 +47,7 @@ padding-right = 0
 module-margin-left = 0
 module-margin-right = 1
 
-font-0 = Inconsolata:fontformat=truetype:size=10:heavy;3
+font-0 = hack:fontformat=truetype:size=8;3
 font-1 = FontAwesome:fontformat=truetype:size=10;3
 font-2 = Unifont:fontformat=truetype:size=10;3
 
@@ -118,17 +118,17 @@ label-visible-padding = 1
 label-visible-background = ${colors.dcyan}
 label-visible-underline = ${colors.dcyan}
 
-ws-icon-0 = 1;
-ws-icon-1 = 2;²
-ws-icon-2 = 3;
-ws-icon-3 = 4;²
-ws-icon-4 = 5;
-ws-icon-5 = 6;
-ws-icon-6 = 6;6
-ws-icon-7 = 7;7
+ws-icon-0 = 1;1
+ws-icon-1 = 2;2
+ws-icon-2 = 3;3
+ws-icon-3 = 4;4
+ws-icon-4 = 5;5
+ws-icon-5 = 6;6
+ws-icon-6 = 6;7
+ws-icon-7 = 7;8
 ws-icon-8 = 8;8
-ws-icon-9 = 9;
-ws-icon-10 = 10;
+ws-icon-9 = 9;9
+ws-icon-10 = 10;
 
 
 [module/cpu]
