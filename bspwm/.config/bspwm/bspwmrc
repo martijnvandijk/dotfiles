@@ -35,9 +35,12 @@ gpg-connect-agent /bye # auto start gpg agent
 ~/bin/martybar.sh &
 ~/.config/bspwm/adjust_gaps.sh &
 compton -cCGf --vsync opengl --shadow-exclude '!focused' &
-syncthing -no-browser & 
+syncthing -no-browser &
 mopidy &
-sleep 0.1 #else stalonetray gets stuck under lemonbar for some reason 
-stalonetray & 
+sleep 0.5 #else stalonetray gets stuck under lemonbar for some reason
+stalonetray &
 cbatticon &
-nm-applet
+nm-applet &
+owncloud &
+dropbox
+ 

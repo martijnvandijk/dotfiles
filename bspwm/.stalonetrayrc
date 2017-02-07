@@ -35,7 +35,7 @@ fuzzy_edges 0 #0
 # geometry <geometry>        # tray's geometry in standard X notation; width and
                              # height are specified in slot_size multiples
 #geometry 1x1+5+1050
-geometry 1x1+1530+2
+geometry 1x1+1500+2
 # grow_gravity <gravity>     # one of N, S, E, W, NW, NE, SW, SE; tray will grow
                              # in the direction opposite to one specified by
 							 # grow_gravity; if horizontal or vertical
@@ -137,4 +137,3 @@ window_type dock
 
 # xsync [<bool>]             # whether to operate on X server synchronously (SLOOOOW)
 xsync false
-

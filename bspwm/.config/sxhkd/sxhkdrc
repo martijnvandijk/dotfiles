@@ -242,7 +242,7 @@ XF86MonBrightnessDown
 	light -U 10
 
 super + F1
-	~/.config/bspwm/fancylock/lock
+	slock
 
 super + F2
 	setxkbmap -layout us -variant dvp -option caps:backspace
