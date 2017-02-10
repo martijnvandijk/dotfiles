@@ -38,6 +38,8 @@ bindsym $mod+Shift+colon kill
 # start dmenu (a program launcher)
 bindsym $mod+e exec rofi -show run
 bindsym $mod+shift+e exec rofi -show window
+bindsym $mod+alt+e exec j4-dmenu-desktop --dmenu="rofi -dmenu -i"
+
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -168,6 +170,6 @@ bindsym XF86AudioMicMute exec "/usr/bin/pulseaudio-ctl mute-input"
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
 
-# Polybar
+# Startup Entries
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-
+exec_always nitrogen --restore
