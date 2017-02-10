@@ -173,3 +173,4 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightne
 # Startup Entries
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always nitrogen --restore
+exec_always xset b off
