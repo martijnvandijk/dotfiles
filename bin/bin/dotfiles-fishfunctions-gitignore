@@ -1,0 +1,8 @@
+#!/bin/sh 
+# Adapted from: https://gist.github.com/martinboy/04bfef054d4b0abd75a920b680d1e710
+
+for f in $(git status --porcelain | grep '^??' | cut -d / -f5); do
+    if [ -L "$f" ]; then
+        test -L "$f" && echo $f >> .gitignore;
+    fi
+done
