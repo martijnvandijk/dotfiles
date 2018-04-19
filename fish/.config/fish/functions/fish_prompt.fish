@@ -1,1 +1,1 @@
-/home/martijn/.config/fisherman/shellder/fish_prompt.fish
+/home/martijn/.config/fisherman/bobthefish/fish_prompt.fish

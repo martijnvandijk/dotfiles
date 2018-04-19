@@ -1,13 +1,20 @@
-alias t=task
-export EDITOR=vim
-gpg-agent --daemon
+# set variables
+export EDITOR=nvim
+
+# configure aliases
+alias vim=nvim
+
+# configure gpg-agentn SSH auth
+gpg-connect-agent /bye
 if not set -q SSH_AUTH_SOCK
-#        export SSH_AUTH_SOCK=$HOME/.gnupg/S.gpg-agent.ssh
-	export SSH_AUTH_SOCK=/run/user/1000/gnupg/S.gpg-agent.ssh
+    {$XDF_RUNTIME_DIR}/gnupg/S.gpg-agent.ssh
 end
-export PUUSH_API_KEY="188EF7BAAF5A95F154A51CAF37A1B702"
-export SSH_AUTH_SOCK=/run/user/1000/gnupg/S.gpg-agent.ssh
-set -gx PATH /usr/bin/vendor_perl  $PATH
+
+# configure PATH
 set -gx PATH ~/bin $PATH
-set -gx PATH ~/.gocode/bin $PATH
-export GOPATH="$HOME/.gocode"
+
+if test -d ~/.gocode/bin
+    set -gx PATH ~/.gocode/bin $PATH
+    export GOPATH="$HOME/.gocode"
+end
+

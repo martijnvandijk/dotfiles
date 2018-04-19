@@ -1,1 +1,0 @@
-/home/martijn/.config/fisherman/getopts/getopts.fish
