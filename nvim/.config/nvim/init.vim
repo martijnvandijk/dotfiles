@@ -13,6 +13,10 @@ Plug 'matze/vim-move'
 Plug 'fisadev/vim-ctrlp-cmdpalette'
 Plug 'mileszs/ack.vim'
 Plug 'airblade/vim-gitgutter'
+Plug 'aklt/plantuml-syntax'
+Plug 'scrooloose/vim-slumlord'
+Plug 'xuyuanp/nerdtree-git-plugin'
+Plug 'mbbill/undotree'
 call plug#end()
 
 "General
@@ -35,6 +39,7 @@ set background=dark
 colorscheme solarized
 let g:airline_theme="solarized"
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
 
 "UltiSnips
 let g:UltiSnipsExpandTrigger="<tab>"
@@ -46,3 +51,4 @@ command W :execute ':silent w !sudo tee %' | :edit!
 
 "Keymaps
 nmap <C-n> :NERDTreeToggle <CR>
+nmap <C-p> :CtrlPMixed <CR>
