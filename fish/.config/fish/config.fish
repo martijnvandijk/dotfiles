@@ -1,6 +1,6 @@
 # set variables
 export EDITOR=nvim
-
+export TERMINAL=kitty
 # configure aliases
 alias vim=nvim
 
@@ -12,6 +12,10 @@ end
 
 # configure PATH
 set -gx PATH ~/bin $PATH
+
+if test -d ~/.local/bin
+    set -gx PATH ~/.local/bin $PATH
+end
 
 if test -d ~/.gocode/bin
     set -gx PATH ~/.gocode/bin $PATH
