@@ -46,9 +46,11 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
+"CtlP
+let g:ctrlp_cmd = 'CtrlPMixed'
+
 "Commands
-command W :execute ':silent w !sudo tee %' | :edit!
+command! W :execute ':silent w !sudo tee %' | :edit!
 
 "Keymaps
 nmap <C-n> :NERDTreeToggle <CR>
-nmap <C-p> :CtrlPMixed <CR>
