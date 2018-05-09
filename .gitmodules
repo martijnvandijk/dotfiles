@@ -1,0 +1,3 @@
+[submodule "latex/texmf/tex/latex/local/hu-latex"]
+	path = latex/texmf/tex/latex/local/hu-latex
+	url = git@github.com:martijnvandijk/hu-latex
