@@ -1,3 +1,6 @@
 [submodule "latex/texmf/tex/latex/local/hu-latex"]
 	path = latex/texmf/tex/latex/local/hu-latex
 	url = git@github.com:martijnvandijk/hu-latex
+[submodule "latex/texmf/tex/latex/local/pdfpc-latex-notes"]
+	path = latex/texmf/tex/latex/local/pdfpc-latex-notes
+	url = https://github.com/cebe/pdfpc-latex-notes/
